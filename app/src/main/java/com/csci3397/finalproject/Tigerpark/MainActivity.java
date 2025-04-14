@@ -1,24 +1,50 @@
-package com.csci3397.finalproject.Tigerpark;
+package com.csci3397.tigerpark;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
-import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
+        setContentView(R.layout.activity_main);  // Make sure to use the updated layout
+
+        // Get references to the buttons
+        Button btnFaculty = findViewById(R.id.btnFaculty);
+        Button btnStudents = findViewById(R.id.btnStudents);
+        Button btnGuest = findViewById(R.id.btnGuest);
+
+        // Set up click listeners for each button
+        btnFaculty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to FacultyActivity
+                Intent intent = new Intent(MainActivity.this, FacultyActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnStudents.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to StudentsActivity
+                Intent intent = new Intent(MainActivity.this, StudentsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        btnGuest.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                // Navigate to GuestActivity
+                Intent intent = new Intent(MainActivity.this, GuestActivity.class);
+                startActivity(intent);
+            }
         });
     }
 }
