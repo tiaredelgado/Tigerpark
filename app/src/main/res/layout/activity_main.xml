@@ -1,13 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="20dp"
-    android:background="@color/light_background"> <!-- background color -->
+    android:background="@color/light_background">
 
-    <!-- Welcome Title -->
     <TextView
         android:id="@+id/textWelcome"
         android:layout_width="wrap_content"
@@ -20,7 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- University Subtext -->
     <TextView
         android:id="@+id/textUniversity"
         android:layout_width="wrap_content"
@@ -33,22 +31,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
-    <!-- Buttons -->
-
-    <!-- Parking Permit Info -->
-
-    <Button
-        android:id="@+id/btnMap"
-        android:layout_width="231dp"
-        android:layout_height="88dp"
-        android:layout_marginTop="44dp"
-        android:backgroundTint="@color/maroon"
-        android:text="Map"
-        android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textUniversity" />
-
     <Button
         android:id="@+id/btnFaculty"
         android:layout_width="231dp"
@@ -57,10 +39,9 @@
         android:backgroundTint="@color/maroon"
         android:text="Faculty"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintTop_toBottomOf="@id/textUniversity"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btnStudents"
@@ -70,9 +51,9 @@
         android:backgroundTint="@color/maroon"
         android:text="Students"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnFaculty"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnFaculty" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
         android:id="@+id/btnGuest"
@@ -82,23 +63,8 @@
         android:backgroundTint="@color/maroon"
         android:text="Guest"
         android:textColor="@color/white"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintTop_toBottomOf="@id/btnStudents"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnStudents" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <TextView
-        android:id="@+id/textParkingPermit"
-        android:layout_width="257dp"
-        android:layout_height="30dp"
-        android:layout_marginTop="20dp"
-        android:text="Need a Parking Permit?"
-        android:textColor="@color/maroon"
-        android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.622"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/btnGuest"
-        app:layout_constraintVertical_bias="0.832" />
 </androidx.constraintlayout.widget.ConstraintLayout>

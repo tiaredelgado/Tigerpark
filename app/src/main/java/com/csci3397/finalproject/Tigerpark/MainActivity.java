@@ -1,4 +1,4 @@
-package com.csci3397.tigerpark;
+package com.csci3397.finalproject.Tigerpark;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -32,8 +32,8 @@ public class MainActivity extends AppCompatActivity {
         btnStudents.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Navigate to StudentsActivity
-                Intent intent = new Intent(MainActivity.this, StudentsActivity.class);
+                // Navigate to StudentActivity
+                Intent intent = new Intent(MainActivity.this, StudentActivity.class);
                 startActivity(intent);
             }
         });
@@ -41,7 +41,6 @@ public class MainActivity extends AppCompatActivity {
         btnGuest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                // Navigate to GuestActivity
                 Intent intent = new Intent(MainActivity.this, GuestActivity.class);
                 startActivity(intent);
             }
