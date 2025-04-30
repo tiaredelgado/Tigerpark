@@ -34,7 +34,7 @@
 
         <activity android:name=".FacultyActivity" />
         <activity android:name=".StudentActivity" />
-        <activity android:name=".GuestActivity" />
+        <activity android:name=".VisitorActivity" />
         <activity android:name=".MapActivity" />
 
     </application>
