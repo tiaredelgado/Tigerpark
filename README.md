@@ -79,6 +79,10 @@ Used to display the embedded interactive map:
 
 ### 🚘 Google Directions API
 
+```http
+https://developers.google.com/maps/documentation/directions/overview
+```
+
 Used to get real-time driving directions:
 
 ```http
@@ -95,10 +99,11 @@ https://maps.googleapis.com/maps/api/directions/json?origin=...&destination=...&
 
 ## 🔐 Permissions Required
 
-<pre```text 
+```xml 
 <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> 
 <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> 
-<uses-permission android:name="android.permission.INTERNET" />```</pre>
+<uses-permission android:name="android.permission.INTERNET" />
+```
 
 ---
 
