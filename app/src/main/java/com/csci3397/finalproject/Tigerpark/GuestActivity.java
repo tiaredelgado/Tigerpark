@@ -47,6 +47,11 @@ public class GuestActivity extends AppCompatActivity {
         Map<String, double[]> map = new HashMap<>();
         map.put("Alamo Stadium", new double[]{29.455654, -98.479585});
         map.put("Laurie Parking Garage", new double[]{29.462250, -98.483270});
+        map.put("Lot B", new double[]{29.464984913833216, -98.48146198251217});
+        map.put("Lot C", new double[]{29.464102, -98.484260}); //accurate
+        map.put("Lot G", new double[]{29.465773, -98.484330});
+        map.put("Lot S", new double[]{29.460553, -98.482822});
+        map.put("Lot V", new double[]{29.458791, -98.485325});
         // Add others...
         return map;
     }

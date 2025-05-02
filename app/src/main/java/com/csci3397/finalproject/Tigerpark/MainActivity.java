@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -44,6 +45,14 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent(MainActivity.this, GuestActivity.class);
                 startActivity(intent);
             }
+        });
+
+        TextView permitLink = findViewById(R.id.textParkingPermit);
+        permitLink.setOnClickListener(v -> {
+            String url = "https://www.trinity.edu/directory/departments-offices/student-financial-services/parking-services"; // Replace with your real link
+            Intent intent = new Intent(Intent.ACTION_VIEW);
+            intent.setData(android.net.Uri.parse(url));
+            startActivity(intent);
         });
     }
 }

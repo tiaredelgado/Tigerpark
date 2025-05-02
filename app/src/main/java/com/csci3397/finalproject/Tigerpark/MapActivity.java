@@ -146,7 +146,7 @@ public class MapActivity extends FragmentActivity implements OnMapReadyCallback 
 
     // Call the Google Directions API to fetch route
     private void fetchDirections(LatLng origin, LatLng dest) {
-        String apiKey = "REPLACE_YOUR_API";  // Replace with your real key
+        String apiKey = "ADD_API_HERE";  // Replace with your real key
         String url = "https://maps.googleapis.com/maps/api/directions/json?" +
                 "origin=" + origin.latitude + "," + origin.longitude +
                 "&destination=" + dest.latitude + "," + dest.longitude +
