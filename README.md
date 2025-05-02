@@ -120,7 +120,7 @@ https://maps.googleapis.com/maps/api/directions/json?origin=...&destination=...&
 ## 💬 Notes & Tips
 
 * The Directions API requires **billing to be enabled**.
-* Make sure to replace `YOUR_API_KEY` with your **authorized key** in both the manifest and code.
+* Make sure to replace `YOUR_API_KEY` with your **authorized key** in both the manifest Mâpctivity.
 * You can customize the car icon by scaling a bitmap in Java.
 
 ---
